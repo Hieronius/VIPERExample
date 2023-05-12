@@ -26,6 +26,14 @@ class GreetingViewController: UIViewController {
     
     @IBOutlet var greetingLabel: UILabel!
     
+    // MARK: - Private Properties
+    
+    // type of protocol for Presenter, not a type of Presenter class
+    private var presenter: GreetingViewOutputProtocol!
+    
+    // MARK: - Public Properties
+    
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -37,7 +45,7 @@ class GreetingViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func showGreetingPressed() {
-        
+        presenter.didTapShowGreetingButton()
     }
 }
 
