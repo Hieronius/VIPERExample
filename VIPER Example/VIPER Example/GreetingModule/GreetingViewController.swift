@@ -8,7 +8,7 @@
 import UIKit
 
 // for ViewController
-protocol GreetingViewInputProtocol {
+protocol GreetingViewInputProtocol: AnyObject {
     func setGreeting(_ greeting: String)
 }
 

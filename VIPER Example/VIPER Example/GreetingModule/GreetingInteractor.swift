@@ -13,6 +13,8 @@ protocol GreetingInteractorInputProtocol {
 
 protocol GreetingInteractorOutputProtocol {
     // special method to use only needed data from the Entity
-    func receiveGreetingData(greeting: GreetingData)
+    func receiveGreetingData(greetingData: GreetingData)
 }
+
+
 
