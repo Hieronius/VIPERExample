@@ -28,18 +28,21 @@ class GreetingViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    // type of protocol for Presenter, not a type of Presenter class
-    private var presenter: GreetingViewOutputProtocol!
+    // time to build the module
+    private let configurator: GreetingConfiguratorInputProtocol = GreetingConfigurator()
     
     // MARK: - Public Properties
     
+    // type of protocol for Presenter, not a type of Presenter class
+    var presenter: GreetingViewOutputProtocol!
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // some code here
+        // build module with ViewController
+        configurator.configure(with: self)
     }
     
     // MARK: - IBActions
