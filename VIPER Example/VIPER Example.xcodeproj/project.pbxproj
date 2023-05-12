@@ -13,6 +13,11 @@
 		DD8D82D12A0E5A5200505B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8D82CF2A0E5A5200505B71 /* Main.storyboard */; };
 		DD8D82D32A0E5A5700505B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8D82D22A0E5A5700505B71 /* Assets.xcassets */; };
 		DD8D82D62A0E5A5700505B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8D82D42A0E5A5700505B71 /* LaunchScreen.storyboard */; };
+		DD8D82DE2A0E5AA100505B71 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D82DD2A0E5AA100505B71 /* Entity.swift */; };
+		DD8D82E12A0E5B4B00505B71 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D82E02A0E5B4B00505B71 /* GreetingViewController.swift */; };
+		DD8D82E32A0E5B7600505B71 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D82E22A0E5B7600505B71 /* GreetingPresenter.swift */; };
+		DD8D82E52A0E5BAF00505B71 /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D82E42A0E5BAF00505B71 /* GreetingInteractor.swift */; };
+		DD8D82E72A0E5BC100505B71 /* GreetingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D82E62A0E5BC100505B71 /* GreetingConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		DD8D82D22A0E5A5700505B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8D82D52A0E5A5700505B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD8D82D72A0E5A5700505B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8D82DD2A0E5AA100505B71 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		DD8D82E02A0E5B4B00505B71 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		DD8D82E22A0E5B7600505B71 /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		DD8D82E42A0E5BAF00505B71 /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		DD8D82E62A0E5BC100505B71 /* GreetingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,25 @@
 				DD8D82C92A0E5A5200505B71 /* AppDelegate.swift */,
 				DD8D82CB2A0E5A5200505B71 /* SceneDelegate.swift */,
 				DD8D82CD2A0E5A5200505B71 /* ViewController.swift */,
+				DD8D82DD2A0E5AA100505B71 /* Entity.swift */,
+				DD8D82DF2A0E5AD600505B71 /* GreetingModule */,
 				DD8D82CF2A0E5A5200505B71 /* Main.storyboard */,
 				DD8D82D22A0E5A5700505B71 /* Assets.xcassets */,
 				DD8D82D42A0E5A5700505B71 /* LaunchScreen.storyboard */,
 				DD8D82D72A0E5A5700505B71 /* Info.plist */,
 			);
 			path = "VIPER Example";
+			sourceTree = "<group>";
+		};
+		DD8D82DF2A0E5AD600505B71 /* GreetingModule */ = {
+			isa = PBXGroup;
+			children = (
+				DD8D82E02A0E5B4B00505B71 /* GreetingViewController.swift */,
+				DD8D82E22A0E5B7600505B71 /* GreetingPresenter.swift */,
+				DD8D82E42A0E5BAF00505B71 /* GreetingInteractor.swift */,
+				DD8D82E62A0E5BC100505B71 /* GreetingConfigurator.swift */,
+			);
+			path = GreetingModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8D82DE2A0E5AA100505B71 /* Entity.swift in Sources */,
+				DD8D82E32A0E5B7600505B71 /* GreetingPresenter.swift in Sources */,
 				DD8D82CE2A0E5A5200505B71 /* ViewController.swift in Sources */,
+				DD8D82E52A0E5BAF00505B71 /* GreetingInteractor.swift in Sources */,
 				DD8D82CA2A0E5A5200505B71 /* AppDelegate.swift in Sources */,
+				DD8D82E72A0E5BC100505B71 /* GreetingConfigurator.swift in Sources */,
+				DD8D82E12A0E5B4B00505B71 /* GreetingViewController.swift in Sources */,
 				DD8D82CC2A0E5A5200505B71 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
